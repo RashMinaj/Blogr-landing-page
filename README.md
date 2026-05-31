@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - GitHub Repository: [](https://github.com/RashMinaj/)
-- Live Site URL: [Add your Vercel live URL here]
+- Live Site URL: (https://blogr-landing-page-chi-ten.vercel.app/)
 
 ---
 
