@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    color: hsl(207, 13%, 34%);
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* ── Dark mode  ── */
+  .dark body {
+    background-color: hsl(240, 10%, 13%);
+    color: hsl(0, 0%, 85%);
+  }
+
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4 {
+    color: white;
+  }
+
+  .dark p {
+    color: hsl(0, 0%, 75%);
+  }
+
+  .dark section {
+    background-color: hsl(240, 10%, 13%);
+  }
+
+  .dark footer {
+    background-color: hsl(240, 10%, 8%);
+  }
+
+.dark .bg-white {
+  background-color: hsl(240, 10%, 18%) !important;
+  color: white !important;
+}
+
+.dark .bg-white a {
+  color: white !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: hsl(240, 10%, 25%) !important;
+}
+
+.dark .bg-gray-100 a {
+  color: white !important;
+}
+
+.dark .text-blue-900-blogr {
+  color: white !important;
+}
+
+.dark .text-gray-600-blogr {
+  color: hsl(0, 0%, 85%) !important;
+}
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-radius: 0 0 0 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dark-section {
+  background: linear-gradient(135deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
+  border-radius: 0 100px 0 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.light-section-rounded {
+  border-radius: 0 100px 0 0;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+
+.dropdown-enter {
+  animation: dropIn 0.2s ease forwards;
+}
+
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-menu-enter {
+  animation: slideDown 0.25s ease forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
